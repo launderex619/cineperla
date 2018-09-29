@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/BtnCartelera"
+        android:icon="@drawable/ic_cartelera"
+        android:title="@string/title_cartelera"
+        />
+
+    <item
+        android:id="@+id/BtnEstrenos"
+        android:icon="@drawable/ic_estrenos"
+        android:title="@string/title_estrenos" />
+
+    <item
+        android:id="@+id/BtnPerfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="@string/title_perfil" />
+
+</menu>

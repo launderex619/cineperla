@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karaokulta.test.cineperla.Empleado">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/seccion"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/LySeccion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnPelicula"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Peliculas" />
+
+                        <Button
+                            android:id="@+id/btnFuncion"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Funciones" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnVenderEntrada"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Vender entrada" />
+
+                        <Button
+                            android:id="@+id/btnUsuario"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Usuarios" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ActionGerente1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnEmpleado"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Emmpledado" />
+
+                        <Button
+                            android:id="@+id/btnPuesto"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Puestos" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ActionGerente2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnConsultas"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Consultas" />
+
+                        <Button
+                            android:id="@+id/btnCorte"
+                            android:layout_width="133dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:text="Corte" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,290 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karaokulta.test.cineperla.fragment_pelicula">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <Button
+                        android:id="@+id/btnAgregar"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Añadir"
+                        android:textColor="@color/cardview_light_background" />
+
+                    <Button
+                        android:id="@+id/btnModificar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Modificar"
+                        android:textColor="@color/cardview_light_background" />
+
+                    <Button
+                        android:id="@+id/btnEliminar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Eliminar"
+                        android:textColor="@color/cardview_light_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LyModificar"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/SpFunciones"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Lyagregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TvAddPelicula"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Añadir funcion"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp" />
+
+                        <TextView
+                            android:id="@+id/TvPelicula"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="Pelicula"
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/SpPelicula"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp" />
+
+                        <TextView
+                            android:id="@+id/TvSala"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="Sala"
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/SpSala"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/salas"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="42dp"
+                            android:layout_height="46dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp" />
+
+                        <TextView
+                            android:id="@+id/TvDia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="Fecha" />
+
+                        <ImageView
+                            android:id="@+id/ImgDia"
+                            android:layout_width="10dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="75dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorWhite"
+                            android:scaleType="center"
+                            android:src="@drawable/calendario" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="42dp"
+                            android:layout_height="46dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp" />
+
+                        <TextView
+                            android:id="@+id/TvHora"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="Hora" />
+
+                        <ImageView
+                            android:id="@+id/ImgHora"
+                            android:layout_width="5dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="75dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorWhite"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/hora" />
+
+                    </LinearLayout>
+
+
+
+                        <Button
+                            android:id="@+id/btnAdd"
+                            style="@style/AppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="2dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Agregar"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/btnEdit"
+                            style="@style/AppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="2dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Modificar"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/btnDelete"
+                            style="@style/AppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="2dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Eliminar"
+                            android:textColor="@color/cardview_light_background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

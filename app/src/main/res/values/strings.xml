@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Cine Perla</string>
+    <string name="appFolder">CinePerlaImages</string>
+    <string name="title_cartelera">Cartelera</string>
+    <string name="title_estrenos">Estrenos</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+    <string name="genero">Genero</string>
+    <string name="clasificacion">Clasificacion</string>
+
+    <string-array name="salas">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="Generos">
+        <item>Cine adolescente</item>
+        <item>Cine arte</item>
+        <item>Cine BDSM</item>
+        <item>Cine bélico</item>
+        <item>Cine de gánsteres</item>
+        <item>Cine catástrofe</item>
+        <item>Cine costumbrista</item>
+        <item>Cine cristiano</item>
+        <item>Cine de acción</item>
+        <item>Cine de animación</item>
+        <item>Cine de artes marciales</item>
+        <item>Cine de autor</item>
+        <item>Cine de aventuras</item>
+        <item>Cine de ciencia ficción</item>
+        <item>Cine de misterio</item>
+        <item>Cine de samuráis</item>
+        <item>Cine de terror</item>
+        <item>Cine documental</item>
+        <item>Cine épico</item>
+        <item>Cine erótico (no pornográfico)</item>
+        <item>Cine experimental</item>
+        <item>Cine fantástico</item>
+        <item>Cine fetichista</item>
+        <item>Cine gore</item>
+        <item>Cine histórico</item>
+        <item>Cine musical</item>
+        <item>Cine negro</item>
+        <item>Cine peplum</item>
+        <item>Cine policíaco</item>
+        <item>Cine político</item>
+        <item>Cine pornográfico</item>
+        <item>Cine propagandístico</item>
+        <item>Cine romántico</item>
+        <item>Cine S</item>
+        <item>Cine surrealista</item>
+        <item>Cine negro</item>
+        <item>Comedia (cine)</item>
+        <item>Drama</item>
+        <item>Melodrama</item>
+        <item>Películas snuff</item>
+        <item>Spoof movie</item>
+        <item>Thriller</item>
+        <item>Western</item>
+        <item>Cine underground</item>
+        <item>Dramedia</item>
+        <item>Road movie</item>
+        <item>Subgéneros</item>
+    </string-array>
+
+    <string-array name="clasificacion">
+        <item>AA</item>
+        <item>A</item>
+        <item>B</item>
+        <item>B15</item>
+        <item>C</item>
+        <item>CD</item>
+
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
